@@ -11,8 +11,8 @@
 <body>
 
 
-</section>
-    <section id="Home">                                            
+
+    <section id="Home" style="height: auto;">                                           
         <nav>
             <div class="logo">
                 <img src="image/logo.png">
@@ -22,7 +22,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="menu.html">Menu</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="gallary.html">Gallery</a></li>
                 <li><a href="./Review.html">Review</a></li>
             
                 <li><a href="team.html">Team</a></li>
@@ -37,14 +37,6 @@
 
         </nav>
 
-        
-
-        <div class="main_btn">
-            <a href="#">Order Now</a>
-            <i class="fa-solid fa-angle-right"></i>
-        </div>
-       
-
     </section>
 
      <!--Order-->
@@ -58,52 +50,56 @@
                 <img src="image/order_image.png">
             </div>
 
-            <form action="#">
+            <form  action="https://api.web3forms.com/submit" method="POST" >
+                <input type="hidden" name="access_key" value="08e41000-297c-44cf-8fc8-b417a4ac6aaa">
 
                 <div class="input">
                     <p>Name</p>
-                    <input type="text" placeholder="you name">
+                    <input type="text" placeholder="you name"  name="name">
                 </div>
 
                 <div class="input">
                     <p>Email</p>
-                    <input type="email" placeholder="you email">
+                    <input type="email" placeholder="you email" name="email">
                 </div>
 
                 <div class="input">
                     <p>Number</p>
-                    <input placeholder="you number">
+                    <input placeholder="you number" name="number">
                 </div>
 
                 <div class="input">
                     <p>How Much</p>
-                    <input type="number" placeholder="how many order">
+                    <input type="number" placeholder="how many order" name="howMuch">
                 </div>
 
                 <div class="input">
                     <p>You Order</p>
-                    <input placeholder="food name">
+                    <input placeholder="food name" name="Order">
                 </div>
 
                 <div class="input">
                     <p>Address</p>
-                    <input placeholder="you Address">
+                    <input placeholder="you Address" name="Address">
                 </div>
 
-                <a href="#" class="order_btn">Order Now</a>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+               <button type="submit">submit</button>
 
             </form>
-
+           
         </div>
+      
 
     </div>
+    
 
      <!--Footer-->
 
      <footer>
         <div class="footer_main">
 
-            <div class="footer_tag">
+            <div class="footer_tag" >
                 <h2>Location</h2>
                 <p>Sri Lanka</p>
                 <p>USA</p>
@@ -125,8 +121,8 @@
                 <h2>Contact</h2>
                 <p>+94 12 3456 789</p>
                 <p>+94 25 5568456</p>
-                <p>johndeo123@gmail.com</p>
-                <p>foodshop123@gmail.com</p>
+                <p>simranmaran@gmail.com</p>
+            <p>Janvimaran@gmail.com</p>
             </div>
 
             <div class="footer_tag">
