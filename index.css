@@ -694,7 +694,7 @@ section .main .men_text h1 span{
     border: 2px solid #fac031;
 }
 
-.order .order_main form .order_btn{
+.order .order_main form .success{
     padding: 10px 0;
     background: #fac031;
     color: white;
@@ -704,15 +704,15 @@ section .main .men_text h1 span{
     text-decoration: none;
 }
 
-.btn-success{
+.success{
     border-color: #000;
     width: 90px;
     height: 35px;
     text-align: center;
     background-color: #ba8a0e;
-}
+}                                        
 
-.btn-success:hover{
+.success:hover{
     border-color: #000;
     background-color:brown;
 
@@ -901,6 +901,25 @@ footer .end span{
 }
 
 
-@media screen and(max-width:991px) {
-    
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    section nav {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    section nav ul {
+        flex-direction: column; /* Stack menu items */
+    }
+
+    section .main .men_text h1 {
+        font-size: 30px; /* Smaller font size */
+    }
+
+    .gallary .gallary_image_box {
+        grid-template-columns: 1fr; /* Single column for small screens */
+    }
+
+    footer .footer_main {
+        grid-template-columns: 1fr; /* Single column for footer */
+    }
 }
