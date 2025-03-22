@@ -79,68 +79,70 @@ section nav .icon i:hover{
     color: #fac031;
 }
 
-section .main{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+
+
+#outerbox{
+    width:1300px;
+    height:auto;
+    overflow: hidden;
+
+}
+
+#sliderbox{
     position: relative;
-    top: 130px;
+    width:10000px;
+    animation-name: slide ;
+    animation-duration: 15s;
+  
 }
 
-section .main .men_text h1{
-    font-size: 60px;
-    position: relative;
-    top: -90px;
-    left: 20px;
+#sliderbox img{
+    width:1366px;
+    float:left;
+}
+@keyframes slide {
+    from{
+      left: 0px;
+    }
+    20%{
+        left:0px;
+    }
+    25%{
+        left:-1280px;
+    }
+    45%{
+        left:-1280px;
+    
+    }
+    50%{
+        left:-2560;
+    }
+    70%{
+        left:-2560px;
+
+    }
+    75%{
+        left:-2560;
+    }
+    
+   
+    to{
+      left:-3840px;
+    }
+    
 }
 
-section .main .men_text h1 span{
-    margin-left: 15px;
-    color: #fac031;
-    font-family: mv boli;
-    line-height: 22px;
-    font-size: 70px;
+.container{
+    border: 4px solid black;
+    height: 100vh;
+   display:flex;
 }
 
-section .main .main_image img{
-    width: 700px;
-    position: relative;
-    left: 70px;
-}
 
-section p{
-    width: 650px;
-    text-align: justify;
-    position: relative;
-    left: 123px;
-    bottom: 120px;
-    line-height: 22px;
-}
 
-section .main_btn{
-    background: #fac031;
-    position: relative;
-    left: 123px;
-    bottom: 30px;
-    width: 150px;
-    cursor: pointer;
-    padding: 12px 25px;
-}
 
-section .main_btn a{
-    color: #fff;
-    margin-right: 5px;
-    text-decoration: none;
-}
 
-section .main_btn i{
-    color: #fff;
-    transition: 0.3s;
-}
 
-section .main_btn:hover i{
-    transform: translateX(7px);
-}
 
 
 
