@@ -225,6 +225,7 @@ section nav .icon i:hover{
     margin-bottom: 30px;
 }
 
+
 .menu h1 span{
     color: #fac031;
     margin-left: 15px;
@@ -654,6 +655,13 @@ section nav .icon i:hover{
     text-decoration: none;
 }
 
+.btn{
+    border-color: #000;
+    background-color: rgb(226, 138, 23);
+    width: 100px;
+    height:fit-content;
+
+}
 
 
 
