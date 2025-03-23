@@ -24,10 +24,14 @@ section nav{
     position: fixed;
     right: 0;
     left: 0;
-    background: white;
+    background: white;                                      
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     z-index: 1000;
 }
+
+
+
+
 
 section nav .logo img{
     width: 100px;
@@ -233,9 +237,9 @@ section .main .men_text h1 span{
 .menu{
     width: 100%;
     padding: 70px 0;
-    background-image: url(image/5.jpg);
-    background-size: cover;
-    color: white;
+    /* background-image: url(image/5.jpg);
+    background-size: cover; */
+    color:black;
 
     
 }
@@ -347,7 +351,7 @@ section .main .men_text h1 span{
     text-align: center;
     margin-top: 8px;
     line-height: 21px;
-    color: #eeeeee;
+    color: black;
 }
 
 .menu .menu_box .menu_card .menu_info h3{
