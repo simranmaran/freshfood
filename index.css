@@ -14,7 +14,7 @@ html{
 
 section{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 section nav{
@@ -111,7 +111,7 @@ section .main{
 }
 
 section .main .men_text h1{
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 
@@ -119,8 +119,8 @@ section .main .men_text h1 span{
     margin-left: 15px;
     color: #fac031;
     font-family: mv boli;
-    line-height: 22px;
-    font-size: 70px;
+    line-height: 5px;
+    font-size: 40px;
   
 }
 
@@ -227,6 +227,31 @@ section .main .men_text h1 span{
     margin: auto;
     padding-bottom: 50px;
     padding-top: 80px;
+
+}
+@media(max-width:430px){
+
+    .about .about_main .image img{
+
+        width: 400px;
+    }
+
+    .about .about_main{
+        flex-wrap: wrap;
+    }
+
+    .about{
+        height: auto;
+    }
+
+    .about .about_main .about_text p{
+        width: 100%;
+        text-align: justify;
+        margin-right: 50px;
+        line-height: 22px;
+        color: white;
+    }
+
 
 }
 
