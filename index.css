@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    
+    overflow-x: hidden;
    
 }
 
@@ -28,10 +28,6 @@ section nav{
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     z-index: 1000;
 }
-
-
-
-
 
 section nav .logo img{
     width: 100px;
@@ -954,26 +950,33 @@ footer .end span{
      
 }
 
-
-/* Media Queries */
-@media only screen and (max-width: 600px) {
-    section nav {
-        flex-direction: column; /* Stack items vertically */
-    }
-
-    section nav ul {
-        flex-direction: column; /* Stack menu items */
-    }
-
-    section .main .men_text h1 {
-        font-size: 30px; /* Smaller font size */
-    }
-
-    .gallary .gallary_image_box {
-        grid-template-columns: 1fr; /* Single column for small screens */
-    }
-
+@media screen and (max-width: 400px) {
     footer .footer_main {
-        grid-template-columns: 1fr; /* Single column for footer */
+        grid-template-columns: 1fr 1fr; /* Reduce the number of columns */
+    }
+
+    footer .footer_main .footer_tag h2 {
+        font-size: 24px; /* Smaller font size for smaller screens */
+    }
+
+    footer .footer_main .footer_tag p {
+        font-size: 14px; /* Adjust text size for better readability */
+    }
+
+    footer .footer_main .footer_tag {
+        padding: 10px;
+    }
+
+    footer .end {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+
+    footer .end span {
+        margin-left: 0; /* Remove margin on small screens */
+        margin-top: 10px; /* Add space between items */
+    }
+
+    nav ul li a{
+        margin-left: 1vw;
     }
 }
