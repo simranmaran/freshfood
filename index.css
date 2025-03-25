@@ -145,7 +145,7 @@ section .main .men_text h1 span{
     height: 100vh;
     object-fit: cover;
 }
-
+ 
 @keyframes slide{
     0%{transform: translateX(0);}
     25%{transform: translateX(-100vw);}
@@ -229,6 +229,10 @@ section .main .men_text h1 span{
     padding-top: 80px;
 
 }
+
+.h{
+    font-size: 55px;
+}
 @media(max-width:430px){
 
     .about .about_main .image img{
@@ -251,11 +255,32 @@ section .main .men_text h1 span{
         line-height: 22px;
         color: white;
     }
+    
 
+    .h h1{
+        font-size: 30px;
+     }
+     .gallary h1 span{
+    font-size: 30px;
+    }
 
+    .order .order_main .order_image img {
+        width: 350px;
+    }
+
+    .review{
+        width: 100vh;
+        height: 200vh;
+        padding: 70px 0;
+        color:white;
+    
+        background-image: url(image/2.jpg);
+        background-size: cover;
+    }
 }
+    
 
-
+     
 
 /*Menu*/
 
